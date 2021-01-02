@@ -58,7 +58,8 @@ Every J. Random Hacker has published an OSCP cheat sheet:
 
 and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 documents as you progress through the PWK exercises and lab machines. The following are snippets from the three cheat sheets that I created:
 
-	1. An enumeration cheat sheet:
+1. An enumeration cheat sheet:
+
 ```
 PORT SCAN
 =========
@@ -84,7 +85,7 @@ SERVICE ENUMERATION
 ...
 ```
 
-	2. A Linux cheat sheet with shells, file transfer methods, and privilege escalation methods:
+2. A Linux cheat sheet with shells, file transfer methods, and privilege escalation methods:
 
 ```
 SHELLS
@@ -123,8 +124,8 @@ CRONJOBS
 ...
 ```
 
-	3. A Windows cheat sheet with shells, file transfer methods, and privilege escalation methods:
-	
+3. A Windows cheat sheet with shells, file transfer methods, and privilege escalation methods:
+
 ```
 SHELLS
 ======
