@@ -57,6 +57,7 @@ Every J. Random Hacker has published an OSCP cheat sheet:
 ![Google cheat sheet result count](google_cheat_sheet_count.png)
 
 and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 documents as you progress through the PWK exercises and lab machines. The following are snippets from the three cheat sheets that I created:
+
 	1. An enumeration cheat sheet:
 ```
 PORT SCAN
@@ -82,7 +83,9 @@ SERVICE ENUMERATION
 		* PoC: https://github.com/3mrgnc3/pentest_old/blob/master/postfix-shellshock-nc.py
 ...
 ```
+
 	2. A Linux cheat sheet with shells, file transfer methods, and privilege escalation methods:
+
 ```
 SHELLS
 ======
@@ -119,7 +122,9 @@ CRONJOBS
 	* crontabs are stored in /var/spool/cron/crontabs/$user
 ...
 ```
+
 	3. A Windows cheat sheet with shells, file transfer methods, and privilege escalation methods:
+	
 ```
 SHELLS
 ======
